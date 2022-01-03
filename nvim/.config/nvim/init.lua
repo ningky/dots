@@ -1,8 +1,13 @@
 -- lua/plugins
-require('jr.plugins')
-require('jr.config')
-require('colorbuddy').colorscheme('gruvbuddy')
-
+require("jr.plugins")
+require("jr.lsp")
+require("jr.telescope")
+require("jr.treesitter")
+require("jr.cmp")
+require("jr.autopairs")
+require("colorbuddy").colorscheme("gruvbuddy")
+vim.o.background = "dark" -- or "light" for light mode
+-- vim.cmd([[colorscheme nightfox]])
 
 -- Ignore compiled files
 local opt = vim.opt
@@ -54,3 +59,5 @@ opt.belloff = "all" -- Just turn the dang bell off
 
 opt.clipboard = "unnamedplus"
 opt.swapfile = false
+
+opt.completeopt = {'menuone', 'noinsert', 'noselect'}
