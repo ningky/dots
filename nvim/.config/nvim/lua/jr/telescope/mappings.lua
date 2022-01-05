@@ -84,7 +84,7 @@ key_map(
 key_map(
   "n",
   ",d",
-  [[<Cmd>lua require'telescope.builtin'.lsp_workspace_diagnostics()<CR>]],
+  [[<Cmd>lua require'telescope.builtin'.diagnostics()<CR>]],
   { noremap = true, silent = true }
 )
 -- open available commands & run it
