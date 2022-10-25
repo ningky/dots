@@ -52,7 +52,7 @@ end
 lsp_installer.on_server_ready(function(server)
 	local opts = {
 		on_attach = on_attach,
-		capabilities = cmp_nvim_lsp.update_capabilities(capabilities),
+		capabilities = cmp_nvim_lsp.default_capabilities(capabilities),
 	}
 
 	-- if server.name == "jsonls" then

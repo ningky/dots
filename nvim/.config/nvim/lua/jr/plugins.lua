@@ -42,10 +42,9 @@ return packer.startup(function(use)
 	-- My plugins here
 	-- use 'foo1/bar1.nvim'
 	-- use 'foo2/bar2.nvim'
-	--	use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
 	use("wbthomason/packer.nvim")
-	use("tjdevries/colorbuddy.vim")
-	use("tjdevries/gruvbuddy.nvim")
+	-- use("tjdevries/colorbuddy.vim")
+	-- use("tjdevries/gruvbuddy.nvim")
 	use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
 
 	use("nvim-treesitter/nvim-treesitter-textobjects")
