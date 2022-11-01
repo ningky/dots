@@ -2,7 +2,8 @@
 require("jr.plugins")
 require("jr.lsp")
 require("jr.telescope")
--- require("jr.treesitter")
+require("jr.treesitter")
+require("jr.lualine")
 --require("jr.cmp")
 -- require("jr.autopairs")
 -- require("colorbuddy").colorscheme("gruvbuddy")
@@ -60,4 +61,4 @@ opt.belloff = "all" -- Just turn the dang bell off
 opt.clipboard = "unnamedplus"
 opt.swapfile = false
 
-opt.completeopt = {'menuone', 'noinsert', 'noselect'}
+opt.completeopt = { 'menuone', 'noinsert', 'noselect' }
