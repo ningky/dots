@@ -8,7 +8,7 @@ require("jr.lualine")
 -- require("jr.autopairs")
 -- require("colorbuddy").colorscheme("gruvbuddy")
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme duskfox]])
 
 -- Ignore compiled files
 local opt = vim.opt
@@ -61,4 +61,4 @@ opt.belloff = "all" -- Just turn the dang bell off
 opt.clipboard = "unnamedplus"
 opt.swapfile = false
 
-opt.completeopt = { 'menuone', 'noinsert', 'noselect' }
+opt.completeopt = { "menuone", "noinsert", "noselect" }

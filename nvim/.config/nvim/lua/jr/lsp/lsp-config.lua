@@ -1,7 +1,17 @@
-local lsp = require('lsp-zero')
+local lsp = require("lsp-zero")
 
-lsp.preset('recommended')
+lsp.preset("recommended")
 lsp.setup()
+
+lsp.configure("tsserver", {
+	flags = {
+		debounce_text_changes = 150,
+	},
+	on_attach = function(client, bufnr)
+		client.server_capabilities.documentFormattingProvider = false
+		client.server_capabilities.documentRangeFormattingProvider = false
+	end,
+})
 
 -- require("mason").setup {
 --     ui = {
