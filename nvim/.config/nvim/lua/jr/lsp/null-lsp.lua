@@ -19,3 +19,5 @@ null_ls.setup({
     -- diagnostics.flake8
 	},
 })
+
+require('jr.lsp.settings.sumneko_lua')

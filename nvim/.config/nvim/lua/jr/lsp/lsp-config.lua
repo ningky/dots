@@ -13,6 +13,12 @@ lsp.configure("tsserver", {
 	end,
 })
 
+settings = require("jr.lsp.settings.sumneko_lua")
+print(settings.settings)
+lsp.configure("sumneko_lua", {
+    settings = settings.settings
+})
+
 -- require("mason").setup {
 --     ui = {
 --         icons = {

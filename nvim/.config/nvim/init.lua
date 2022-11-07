@@ -1,12 +1,5 @@
 -- lua/plugins
 require("jr.plugins")
-require("jr.lsp")
-require("jr.telescope")
-require("jr.treesitter")
-require("jr.lualine")
---require("jr.cmp")
--- require("jr.autopairs")
--- require("colorbuddy").colorscheme("gruvbuddy")
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme duskfox]])
 
@@ -62,3 +55,18 @@ opt.clipboard = "unnamedplus"
 opt.swapfile = false
 
 opt.completeopt = { "menuone", "noinsert", "noselect" }
+
+-- other setup
+require("jr.lsp")
+require("jr.telescope")
+require("jr.treesitter")
+require("jr.lualine")
+--require("jr.cmp")
+-- require("jr.autopairs")
+-- require("colorbuddy").colorscheme("gruvbuddy")
+--
+
+-- some keymapping
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+         keymap("n", "<space>f", ":LspZeroFormat<CR>", opts)
